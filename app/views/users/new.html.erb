@@ -1,0 +1,12 @@
+<h1>Create New User</h1>
+
+<form action= "<%= users_url %>" method="post">
+  <label for="user">Username:</label>
+  <input  id="user" type="text" name="user[username]" value=" <%=@user.username %>">
+  <label for="password">Password:</label>
+  <input id="password" type="password" name="user[password]">
+
+  <input type="submit" value="Create New User">
+
+  <a href=" <%= new_session_url %> ">Login for existing users</a>
+</form>
